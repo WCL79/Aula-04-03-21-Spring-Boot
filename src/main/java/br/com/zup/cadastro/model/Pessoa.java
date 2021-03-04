@@ -7,6 +7,19 @@ public class Pessoa {
     private String cpf;
     private Date dataNascimento;
     private String senha;
+    Endereco endereco;
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    public Pessoa(Endereco endereco) {
+        this.endereco = endereco;
+    }
 
     public Pessoa() {
     }

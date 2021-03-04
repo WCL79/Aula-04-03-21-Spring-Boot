@@ -1,18 +1,13 @@
 package br.com.zup.cadastro.model;
 
-import java.util.Date;
 
-public class Endereco extends Pessoa{
+public class Endereco{
     private String rua;
     private String numero;
     private String cidade;
     private String cep;
 
     public Endereco() {
-    }
-
-    public Endereco(String userName, String cpf, Date dataNascimento, String senha) {
-        super(userName, cpf, dataNascimento, senha);
     }
 
     public Endereco(String rua, String numero, String cidade, String cep) {
@@ -22,11 +17,35 @@ public class Endereco extends Pessoa{
         this.cep = cep;
     }
 
-    public Endereco(String userName, String cpf, Date dataNascimento, String senha, String rua, String numero, String cidade, String cep) {
-        super(userName, cpf, dataNascimento, senha);
+    public String getRua() {
+        return rua;
+    }
+
+    public void setRua(String rua) {
         this.rua = rua;
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
         this.numero = numero;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
         this.cidade = cidade;
+    }
+
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
         this.cep = cep;
     }
 }
